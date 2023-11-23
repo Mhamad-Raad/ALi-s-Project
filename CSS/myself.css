@@ -5,8 +5,8 @@
   background-color: #6070ff;
   border-bottom-left-radius: 100px;
   padding-top: 100px;
-  padding-bottom: 100px;
-
+  padding: 10px;
+  padding-bottom: 120px;
 }
 
 .myself-title {
@@ -17,5 +17,7 @@
 
 .myself-table {
   margin-top: 50px;
-  border: 1px solid black;
+  border: 1px solid white;
+  color: white;
+  text-align: left;
 }
