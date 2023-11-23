@@ -1,6 +1,5 @@
 .about-me-bg {
   flex-direction: column;
-  background-image: url(.././assets/images/header-shapes\ mobile.png);
   background-repeat: no-repeat;
   background-size: 100%;
   background-color: #fff;
@@ -47,9 +46,6 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .about-me-bg {
-    background-image: url(.././assets/images/Desktopheaderbg.png);
-  }
 
   .title-container {
     width: 350px;
