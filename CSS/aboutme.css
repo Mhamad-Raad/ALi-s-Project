@@ -28,6 +28,7 @@
   font-size: 40px;
   line-height: 52px;
   margin: 12px 0;
+  margin-bottom: 50px;
 }
 
 @keyframes scale-txt {
@@ -62,18 +63,38 @@
     margin-top: 16%;
     margin-left: 15%;
     margin-bottom: 50px;
+    padding-bottom: 75px;
+  }
+
+  .desktop-description {
+    display: block !important;
+    animation-name: slide;
+    animation-duration: 1.5s;
+    font-family: 'Poppins', Arial, Verdana, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    color: #3d4c67;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .mobile-description {
+    display: none;
   }
 }
 
-.description {
-  animation-name: slide;
-  animation-duration: 1.5s;
+.desktop-description {
+  display: none;
   font-family: 'Poppins', Arial, Verdana, Tahoma, sans-serif;
   font-style: normal;
   font-weight: 300;
   color: #3d4c67;
   font-size: 16px;
   line-height: 24px;
+}
+
+.mobile-description {
+  margin-bottom: 75px;
 }
 
 @keyframes slide {
