@@ -19,7 +19,7 @@ closeMenubtn.addEventListener('click', closeMenu);
 const mainMenu = document.querySelector('.main-menu');
 const aboutMyself = document.querySelector('.about-myself-menu');
 const contactMeMenu = document.querySelector('.contact-me-menu');
-const worksMenu = document.querySelector('.works-menu');
+const specialssMenu = document.querySelector('.specialss-menu');
 
 function navigateToMenu() {
   closeMenu();
@@ -33,11 +33,11 @@ function navigateToAboutMyself() {
 }
 aboutMyself.addEventListener('click', navigateToAboutMyself);
 
-function navigateToWorks() {
+function navigateTospecialss() {
   closeMenu();
-  window.location = '#works';
+  window.location = '#specialss';
 }
-worksMenu.addEventListener('click', navigateToWorks);
+specialssMenu.addEventListener('click', navigateTospecialss);
 
 function navigateToContactMe() {
   closeMenu();
@@ -49,16 +49,16 @@ const navItems = document.querySelectorAll('.menu-item');
 window.addEventListener('scroll', () => {
   const windowScrolPosition = window.scrollY;
   const contactMePosition = document.querySelector('#contact-me').offsetTop;
-  const WorksPosition = document.querySelector('.works').offsetTop;
+  const specialssPosition = document.querySelector('.specialss').offsetTop;
   const aboutMyselfPosition = document.querySelector('.about-myself').offsetTop;
   const mainPosition = document.querySelector('#main').offsetTop;
 
-  if (windowScrolPosition >= mainPosition && windowScrolPosition < (WorksPosition - 200)) {
+  if (windowScrolPosition >= mainPosition && windowScrolPosition < (specialssPosition - 200)) {
     navItems[0].classList.add('active');
     navItems[1].classList.remove('active');
     navItems[2].classList.remove('active');
     navItems[3].classList.remove('active');
-  } else if (windowScrolPosition >= (WorksPosition - 200)
+  } else if (windowScrolPosition >= (specialssPosition - 200)
   && windowScrolPosition < (aboutMyselfPosition - 300)) {
     navItems[0].classList.remove('active');
     navItems[1].classList.add('active');
@@ -84,6 +84,6 @@ window.addEventListener('scroll', () => {
 });
 
 navItems[0].addEventListener('click', navigateToMenu);
-navItems[1].addEventListener('click', navigateToWorks);
+navItems[1].addEventListener('click', navigateTospecialss);
 navItems[2].addEventListener('click', navigateToAboutMyself);
 navItems[3].addEventListener('click', navigateToContactMe);
