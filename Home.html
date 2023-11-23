@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles/Home.css">
+  <link rel="stylesheet" href="styles/General.css">
+</link>  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- Font Awesome for icons -->
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <ul class="desktop-navbar-items">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="navbar-toggle" onclick="toggleNavbar()">
+      <i class="fas fa-bars"></i>
+    </div>
+    <ul class="mobile-navbar-items">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  
+  </nav>
+  <img src="./assets/home-header.jpg" alt="welcoming image" class="welcome-image">
+
+  <div class="description-background">
+    <p class="description">
+      Hello, my name is <span class="highlight">John Doe</span>. I am a web developer.
+      Hello, my name is <span class="highlight">John Doe</span>. I am a web developer.
+      Hello, my name is <span class="highlight">John Doe</span>. I am a web developer.
+      Hello, my name is <span class="highlight">John Doe</span>. I am a web developer.
+    </p>
+  </div>
+
+  <script>
+    function toggleNavbar() {
+      var navbarItems = document.querySelector('.mobile-navbar-items');
+      navbarItems.classList.toggle('active');
+    }
+  </script>
+</body>
+
+</html>
