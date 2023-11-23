@@ -77,10 +77,6 @@
     cursor: pointer;
     border-bottom: 3px solid #99a1ea;
   }
-
-  .active {
-    border-bottom: 3px solid #6070ff;
-  }
 }
 
 @keyframes scale-navbar {
